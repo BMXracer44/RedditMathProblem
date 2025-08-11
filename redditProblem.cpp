@@ -12,6 +12,9 @@ int main(){
         int digits[9] = {firstNum / 100, (firstNum / 10) % 10, (firstNum % 100) % 10, secondNum / 10, 
         secondNum % 10, equals / 1000, (equals / 100) % 10, (equals / 10) % 10, equals % 10};
 
+        std::cout << digits[0] << digits[1] << digits[2] << " x " << digits[3] << digits[4] << " = "
+            << digits[5] << digits[6] << digits[7] << digits[8] << "\n";
+
         if(equals < 1000 || equals > 9999){
             continue;
         }
@@ -32,7 +35,7 @@ int main(){
             }
         }
         if(solved){
-            std::cout << "Found solution: ";
+            std::cout << "\nFound solution: ";
             std::cout << digits[0] << digits[1] << digits[2] << " x " << digits[3] << digits[4] << " = "
             << digits[5] << digits[6] << digits[7] << digits[8];
         }
